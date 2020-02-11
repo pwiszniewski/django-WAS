@@ -1,0 +1,9 @@
+<ol>
+{% for astronaut in astronauts %}
+    <li>{{ astronaut.first_name }} {{ astronaut.last_name }}
+    {% if astronaut.image %}
+        <img src="{{ astronaut.image.url }}" alt="">
+    {% endif %}
+    </li>
+{% endfor %}
+</ol>
